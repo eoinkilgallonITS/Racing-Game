@@ -279,6 +279,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567634396}
   m_CullTransparentMesh: 1
+--- !u!1001 &587499244
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3684908315051932545, guid: c48b61d6679583b4fbae1fdd63a314a0, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684908315051932559, guid: c48b61d6679583b4fbae1fdd63a314a0, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684908315051932559, guid: c48b61d6679583b4fbae1fdd63a314a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 598.9993
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684908315051932559, guid: c48b61d6679583b4fbae1fdd63a314a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 299.23016
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684908315051932559, guid: c48b61d6679583b4fbae1fdd63a314a0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -81.99558
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684908315051932559, guid: c48b61d6679583b4fbae1fdd63a314a0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684908315051932559, guid: c48b61d6679583b4fbae1fdd63a314a0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684908315051932559, guid: c48b61d6679583b4fbae1fdd63a314a0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684908315051932559, guid: c48b61d6679583b4fbae1fdd63a314a0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684908315051932559, guid: c48b61d6679583b4fbae1fdd63a314a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684908315051932559, guid: c48b61d6679583b4fbae1fdd63a314a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684908315051932559, guid: c48b61d6679583b4fbae1fdd63a314a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c48b61d6679583b4fbae1fdd63a314a0, type: 3}
 --- !u!1 &599964634
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,6 +434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef7cd9bc5228769459b08ad19fcfc7e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1667896101}
 --- !u!114 &606271159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,7 +530,7 @@ GameObject:
   - component: {fileID: 646396774}
   - component: {fileID: 646396773}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Car 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -540,7 +598,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 646396774}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 606271158}
+        m_TargetAssemblyTypeName: CarSelectController, Assembly-CSharp
+        m_MethodName: UpdateSelectedCar
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 646396773}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &646396774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,7 +745,7 @@ GameObject:
   - component: {fileID: 1133055386}
   - component: {fileID: 1133055385}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Car 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -743,7 +813,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1133055386}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 606271158}
+        m_TargetAssemblyTypeName: CarSelectController, Assembly-CSharp
+        m_MethodName: UpdateSelectedCar
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1133055385}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1133055386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -874,7 +956,7 @@ GameObject:
   - component: {fileID: 1457701297}
   - component: {fileID: 1457701296}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Car 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -942,7 +1024,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1457701297}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 606271158}
+        m_TargetAssemblyTypeName: CarSelectController, Assembly-CSharp
+        m_MethodName: UpdateSelectedCar
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1457701296}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1457701297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -994,7 +1088,7 @@ GameObject:
   - component: {fileID: 1486100318}
   - component: {fileID: 1486100317}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Car 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1063,13 +1157,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 606271157}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 606271158}
+        m_TargetAssemblyTypeName: CarSelectController, Assembly-CSharp
+        m_MethodName: UpdateSelectedCar
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: 1486100317}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1126,7 +1220,7 @@ GameObject:
   - component: {fileID: 1558231397}
   - component: {fileID: 1558231396}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Car 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1194,7 +1288,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1558231397}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 606271158}
+        m_TargetAssemblyTypeName: CarSelectController, Assembly-CSharp
+        m_MethodName: UpdateSelectedCar
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1558231396}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1558231397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1233,3 +1339,14 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1558231394}
   m_CullTransparentMesh: 1
+--- !u!114 &1667896101 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3684908315051932544, guid: c48b61d6679583b4fbae1fdd63a314a0, type: 3}
+  m_PrefabInstance: {fileID: 587499244}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7107175fe0f2d1449f697d62ea2ba7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class SpeedModifier : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float modifer;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public float lastFor;
 }

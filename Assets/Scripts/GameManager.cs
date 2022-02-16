@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public Sprite selectCar;
+    public Sprite selectedCar;
     void Start()
     {
         DontDestroyOnLoad(this);
